@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1770497746806,
+      "tag": "0000_bright_medusa",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1770498178928,
+      "tag": "0001_sweet_roulette",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1770500127591,
+      "tag": "0002_perfect_enchantress",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1770502161514,
+      "tag": "0003_many_tigra",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1770506583452,
+      "tag": "0004_magical_baron_strucker",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1770511792514,
+      "tag": "0005_left_diamondback",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1770512904768,
+      "tag": "0006_spicy_grandmaster",
+      "breakpoints": true
+    }
+  ]
+}
