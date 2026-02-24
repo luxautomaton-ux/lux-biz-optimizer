@@ -37,10 +37,14 @@ queryClient.getMutationCache().subscribe(event => {
   }
 });
 
+const API_BASE = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api/trpc`
+  : "/api/trpc";
+
 const trpcClient = trpc.createClient({
   links: [
     httpBatchLink({
-      url: "/api/trpc",
+      url: API_BASE,
       transformer: superjson,
       async headers() {
         console.log("[TRPC Header] Checking for Firebase user...");

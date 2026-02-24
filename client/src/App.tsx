@@ -31,6 +31,8 @@ import CookiePolicy from "./pages/CookiePolicy";
 import DataSecurity from "./pages/DataSecurity";
 import AcceptableUse from "./pages/AcceptableUse";
 import ShopifyOptimizer from "./pages/ShopifyOptimizer";
+import Support from "./pages/Support";
+import PartnerOnboarding from "./pages/PartnerOnboarding";
 
 function Router() {
   return (
@@ -63,6 +65,8 @@ function Router() {
       <Route path="/security" component={DataSecurity} />
       <Route path="/acceptable-use" component={AcceptableUse} />
       <Route path="/shopify" component={ShopifyOptimizer} />
+      <Route path="/support" component={Support} />
+      <Route path="/partner-onboarding" component={PartnerOnboarding} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
