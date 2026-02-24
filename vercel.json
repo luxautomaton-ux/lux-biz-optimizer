@@ -1,0 +1,37 @@
+{
+    "version": 2,
+    "name": "lux-biz-optimizer",
+    "buildCommand": "npx pnpm build",
+    "outputDirectory": "dist/public",
+    "installCommand": "npx pnpm install",
+    "framework": null,
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "https://lux-biz-optimizer.up.railway.app/api/$1"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                },
+                {
+                    "key": "X-Frame-Options",
+                    "value": "DENY"
+                },
+                {
+                    "key": "X-XSS-Protection",
+                    "value": "1; mode=block"
+                }
+            ]
+        }
+    ]
+}
